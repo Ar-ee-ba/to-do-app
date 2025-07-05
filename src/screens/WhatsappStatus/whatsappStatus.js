@@ -6,6 +6,7 @@ import Ionicon from "@expo/vector-icons/Ionicons";
 import { styles } from "./styles";
 import Fontisto from "@expo/vector-icons/Fontisto";
 import { IconContainer } from "../../components/iconContainer";
+import ConfettiButton from "../../components/confettiButton";
 export default function WhatsappStatus() {
   const data = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
   const _renderStatus = (item) => {
@@ -50,6 +51,7 @@ export default function WhatsappStatus() {
           />
         </View>
       </View>
+      <ConfettiButton />
     </View>
   );
 }

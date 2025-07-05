@@ -1,7 +1,6 @@
 import { TouchableOpacity, Text, StyleSheet } from "react-native";
 import React from "react";
-
-export default function Button({ onPress, title, btnIcon }) {
+function Button({ onPress, title, btnIcon }) {
   return (
     <TouchableOpacity onPress={onPress} style={styles.buttonCon}>
       {btnIcon}
@@ -12,17 +11,15 @@ export default function Button({ onPress, title, btnIcon }) {
 const styles = StyleSheet.create({
   buttonCon: {
     backgroundColor: "#B0C4DE",
-    width: 80,
-    height: 80,
+    width: "100%",
+    height: 70,
+    padding: 10,
     justifyContent: "center",
     alignItems: "center",
-    borderRadius: 20,
     borderWidth: 2,
-    borderColor: "#4682B4",
   },
   buttonText: {
     fontSize: 32,
-    color: "#1E3A5F",
-    fontWeight: "bold",
   },
 });
+export { Button };
