@@ -1,9 +1,12 @@
+import { useNavigation } from "@react-navigation/native";
 import { StyleSheet, View, Button, TextInput, Text } from "react-native";
 
-export default function Login() {
+export function Login() {
   function OnLoginButtonPress() {
     alert("Welcome!!!");
+    navigate("WhatsAppStatus");
   }
+  const { navigate } = useNavigation();
 
   return (
     <View style={styles.container}>
